@@ -34,7 +34,7 @@ searchField.addEventListener("focus", (e) => {
   fetch(url)
     .then((response) => response.json())
     .then((todos) => {
-      searchField.addEventListener("input", () => {
+      searchField.addEventListener("keyup", () => {
         todosList.innerHTML = "";
         let searchString = searchField.value.trim();
         
